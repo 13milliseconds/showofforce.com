@@ -1,0 +1,477 @@
+/*
+Theme Name: Show of Force 2019
+Description: Custom theme for Show of Force
+Theme URI:   https://showofforce.com
+Author: 13milliseconds
+Author URI:  https://13milliseconds.com
+Template: salient
+Version: 1.0
+*/
+  
+  body {
+    color: #000000;
+
+        h1 {
+            color: #ce1126;
+        }
+
+        h2, h3, h4, h5 {
+            color: #000000;
+        }
+  }
+  
+  p {
+    padding-bottom: 20px;
+  }
+  
+  /* unvisited link */
+  
+  a {
+    &:link {
+      color: #ce1126;
+    }
+    &:hover {
+      color: #f44a5d;
+    }
+    &:active {
+      color: #FFFFFF;
+    }
+  }
+  
+  /* mouse over link */
+  
+  /* selected link */
+  
+  .icon-salient-plus {
+    visibility: hidden !important;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .portfolio-items .col {
+    background-color: #ffffff;
+  }
+  
+  .nectar-love, .icon-salient-back-to-all {
+    display: none !important;
+  }
+  
+  .project-title .section-title {
+    padding: 0 !important;
+  }
+  
+  .container-wrap, .project-title {
+    background-color: #FFFFFF !important;
+    margin-top: 0 !important;
+    padding-top: 0;
+  }
+  
+  .swiper-slide[data-bg-alignment="center"] {
+    margin-bottom: 50px;
+  }
+  
+  .row .col.section-title {
+    padding: 30px 0px !important;
+  }
+  
+  #page-header-bg h1 {
+    line-height: 40px !important;
+  }
+  
+  body {
+    h1, .row .col.section-title h1 {
+      line-height: 40px !important;
+    }
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    background-color: #FFFFFF !important;
+  }
+  
+  @media only screen and (max-width: 1000px) and (min-width: 690px) {
+    .portfolio-items:not(.carousel) .col {
+      &.span_4, &.span_3 {
+        width: 49% !important;
+        margin: 1px !important;
+      }
+    }
+  }
+  
+  .portfolio-items .col {
+    &.span_4 {
+      width: 32.5%;
+      margin: 0px 1px;
+    }
+    &.span_3 {
+      width: 24%;
+      margin: 0px 1px;
+    }
+  }
+  
+  body .portfolio-items .col {
+    height: auto;
+    margin-bottom: 2px !important;
+  }
+  
+  #footer-outer #copyright li a i {
+    color: white;
+  }
+  
+  .portfolio-items .col .work-item .work-info a {
+    background-color: rgba(1, 1, 1, 0);
+    font-family: Montserrat;
+    font-size: 15px !important;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .menu-item img {
+    width: 15px !important;
+    margin-bottom: 5px !important;
+  }
+  
+  .facebooklogo:hover {
+    background-image: url('https://web.archive.org/web/20181205033411im_/http://showofforce.com/official/wp-content/uploads/2015/06/facebook-red.png');
+  }
+  
+  .twitterlogo:hover {
+    background-image: url('https://web.archive.org/web/20181205033411im_/http://showofforce.com/official/wp-content/uploads/2015/06/twitter-red.png');
+  }
+  
+  #footer-outer #copyright {
+    margin-bottom: 20px;
+  }
+  
+  /*################  PORTFOLIO  #########################*/
+  
+  .portfolio-filters-inline .container ul {
+    float: left;
+  }
+  
+  .portfolio-items .col .work-info .vert-center {
+    text-align: center !important;
+    font-size: 20px;
+
+    p {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: left !important;
+    }
+
+    h3 {
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 26px;
+      text-align: left !important;
+    }
+  }
+  
+  .portfolio-filters-inline .container ul a {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-right: 20px;
+    &:hover {
+      color: white;
+    }
+  }
+  
+  /*################  SINGLE PORTFOLIO ITEM  #########################*/
+  
+  #full_width_portfolio {
+    #page-header-bg {
+      background-color: black !important;
+      h1 {
+        color: white !important;
+      }
+    }
+    h1 {
+      text-align: left;
+    }
+  }
+  
+  .single-portfolio .row .col.section-title h1 {
+    text-align: left !important;
+  }
+  
+  #portfolio-nav a i {
+    color: #cccccc !important;
+  }
+  
+  #full_width_portfolio {
+    .container-wrap {
+      background-color: black !important;
+      color: white !important;
+    }
+    h2 {
+      color: white !important;
+    }
+  }
+  
+  .icon-salient-left-arrow-thin {
+    color: white !important;
+  }
+  
+  .carousel-next, .carousel-prev {
+    background-color: transparent;
+  }
+  
+  #top #logo img {
+    margin-top: 3px;
+  }
+  
+  .single-portfolio #post-area {
+    width: 100% !important;
+  }
+  
+  /*################  TEAM  #########################*/
+  
+  .portfolio-items .col .work-info-bg {
+    background-color: black;
+  }
+  
+  .team {
+    background-color: #ce1126 !important;
+  }
+  
+  @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    .portfolio-items .work-meta p {
+      font-size: 9px;
+    }
+    body {
+      background-color: black !important;
+    }
+  }
+  
+  .work-meta {
+    height: 60px;
+    p {
+      line-height: 15px !important;
+      padding-top: 5px;
+    }
+  }
+  
+  /*################  BACKGROUNDS  #########################*/
+  
+  #ajax-loading-screen {
+    background-color: black;
+  }
+  
+  body {
+    background-color: black !important;
+  }
+  
+  .team-member h4 {
+    font-size: 15px;
+    text-transform: uppercase !important;
+  }
+  
+  .position {
+    font-size: 12px;
+    text-transform: uppercase !important;
+  }
+  
+  .team-member img {
+    margin-bottom: 0px !important;
+  }
+  
+  /*################  SOCIAL GOOD PAGE  #########################*/
+  
+  .white-sg-text {
+    p {
+      color: white;
+      font-size: 16px;
+      text-transform: none !important;
+    }
+    h1 {
+      color: white;
+      font-size: 50px;
+      line-height: 45px !important;
+      text-transform: uppercase;
+    }
+  }
+  
+  .blue-bg {
+    background: #459ad4;
+    padding: 20px !important;
+    text-align: center;
+    color: #0a0a0a;
+    p {
+      width: 70%;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 40px;
+      color: white !important;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .button-sg-white {
+    padding: 20px;
+    background: white;
+    color: #459ad4 !important;
+    font-size: 20px;
+    font-weight: 700;
+    &:hover {
+      color: #1d6da4 !important;
+      i {
+        color: #1d6da4 !important;
+      }
+    }
+  }
+  
+  .icon-tiny-sg {
+    line-height: 20px !important;
+    height: 20px;
+    width: 25px;
+    margin-right: 5px;
+    font-size: 20px !important;
+    color: #459ad4;
+    background-color: transparent !important;
+  }
+  
+  .grey-bg {
+    color: #0a0a0a;
+    h1 {
+      font-size: 35px;
+      color: #459ad4 !important;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .large {
+      font-size: 20px !important;
+      border: 3px solid !important;
+    }
+  }
+  
+  .button-sg-grey {
+    padding: 20px;
+    background: #d8d8d8;
+    color: #459ad4 !important;
+    border: 3px solid #459ad4;
+    font-size: 20px;
+    font-weight: 700;
+    &:hover {
+      i {
+        color: #1d6da4 !important;
+      }
+      color: #1d6da4 !important;
+    }
+  }
+  
+  .sg-portfolio .work-info-bg {
+    background-color: #459ad4 !important;
+  }
+  
+  .vert-cent {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .vert-cent-wrap {
+    display: table;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  @media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    .button-sg-grey {
+      padding: 15px !important;
+      font-size: 17px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 990px) and (min-width: 470px) {
+    .button-sg-white {
+      padding: 15px;
+      font-size: 17px;
+    }
+    .grey-bg {
+      text-align: center;
+    }
+    .button-sg-grey {
+      padding: 15px !important;
+      font-size: 17px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 470px) {
+    .blue-bg h1 {
+      font-size: 30px;
+    }
+    .button-sg-white {
+      padding: 10px;
+      font-size: 12px;
+      background-color: transparent;
+      color: #fff !important;
+      i {
+        color: #fff !important;
+      }
+      &:hover {
+        color: #fafafa !important;
+      }
+    }
+    .grey-bg {
+      text-align: center;
+    }
+    .button-sg-grey {
+      padding: 15px !important;
+      font-size: 17px !important;
+      border: 0;
+      background-color: transparent;
+    }
+  }
+  
+  #footer-outer #copyright {
+    margin-bottom: 0px !important;
+  }
+  
+  /*################  AMBASSADORS SIGN UP  #########################*/
+  
+  input {
+    padding-bottom: 40px;
+  }
+  
+  /*################  SOF Social Good  #########################*/
+  
+  .about-more {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  
+  .white-sg-text h3 {
+    color: white;
+  }
+  
+  .blog-title h1 {
+    color: #459ad4;
+  }
+  
+  input[type=submit] {
+    background-color: #459ad4;
+    &#mc-embedded-subscribe:hover {
+      background-color: #459ad4 !important;
+      opacity: .6;
+    }
+  }
+  
+  body header#top nav .sf-menu ul li.current-menu-item > a {
+    color: white !important;
+    text-transform: uppercase;
+  }
+  
+  .sub-menu a {
+    &:link, &:hover, &:visited {
+      color: white !important;
+      text-transform: uppercase;
+    }
+  }
+  
+  body header#top nav .sf-menu ul li.current-menu-item > a:hover {
+    color: #459ad4 !important;
+  }

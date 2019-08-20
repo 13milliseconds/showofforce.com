@@ -30,6 +30,10 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com/MIGRATEDB_PRO_KEY"
     }
   ],
   "require": {
@@ -39,7 +43,12 @@
     "oscarotero/env": "^1.2.0",
     "roots/wordpress": "5.2.2",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
+    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
+    "wpackagist-plugin/wp-fastest-cache":"^0.8.9.3",
+    "wpackagist-plugin/ewww-image-optimizer":"^4.7.4",
+    "wpackagist-plugin/duplicate-post":"^3.2.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",

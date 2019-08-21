@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d0bbe3785f648a6483d53b957852cd0",
+    "content-hash": "0f742a9f7251c147ae714208fe7d6bcd",
     "packages": [
         {
             "name": "13milliseconds/js_composer_salient",
@@ -41,6 +41,42 @@
                 "issues": "https://github.com/13milliseconds/js_composer_salient/issues"
             },
             "time": "2019-08-21T15:12:46+00:00"
+        },
+        {
+            "name": "13milliseconds/salient-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/salient-core.git",
+                "reference": "af62f85784d2aec9f334a097dc37e94b8ad5683f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/salient-core/zipball/af62f85784d2aec9f334a097dc37e94b8ad5683f",
+                "reference": "af62f85784d2aec9f334a097dc37e94b8ad5683f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPBakery",
+                    "homepage": "https://wpbakery.com/"
+                }
+            ],
+            "description": "Salient Core plugin for Salient theme",
+            "homepage": "https://github.com/13milliseconds/salient-core",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/salient-core/tree/master",
+                "issues": "https://github.com/13milliseconds/salient-core/issues"
+            },
+            "time": "2019-08-21T15:26:44+00:00"
         },
         {
             "name": "composer/installers",
@@ -941,6 +977,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "13milliseconds/js_composer_salient": 20,
+        "13milliseconds/salient-core": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

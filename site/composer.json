@@ -38,6 +38,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:13milliseconds/js_composer_salient.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/salient-core.git"
     }
   ],
   "require": {
@@ -48,6 +52,7 @@
     "roots/wordpress": "5.2.2",
     "roots/wp-config": "1.0.0",
     "13milliseconds/js_composer_salient": "dev-master",
+    "13milliseconds/salient-core": "dev-master",
     "roots/wp-password-bcrypt": "1.0.0",
     "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
     "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",

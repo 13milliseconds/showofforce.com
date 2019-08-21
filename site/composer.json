@@ -48,6 +48,7 @@
     "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
     "wpackagist-plugin/wp-fastest-cache":"^0.8.9.3",
     "wpackagist-plugin/ewww-image-optimizer":"^4.7.4",
+    "wpackagist-plugin/wp-maintenance-mode":"^2.2.4",
     "wpackagist-plugin/duplicate-post":"^3.2.2"
   },
   "require-dev": {

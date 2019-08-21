@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f742a9f7251c147ae714208fe7d6bcd",
+    "content-hash": "f8f05e0203d62109465172fdfc473f17",
     "packages": [
         {
             "name": "13milliseconds/js_composer_salient",
@@ -77,6 +77,42 @@
                 "issues": "https://github.com/13milliseconds/salient-core/issues"
             },
             "time": "2019-08-21T15:26:44+00:00"
+        },
+        {
+            "name": "13milliseconds/salient-portfolio",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/salient-portfolio.git",
+                "reference": "e3f997ed4299cd307c057d64070dba23f183e354"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/salient-portfolio/zipball/e3f997ed4299cd307c057d64070dba23f183e354",
+                "reference": "e3f997ed4299cd307c057d64070dba23f183e354",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPBakery",
+                    "homepage": "https://wpbakery.com/"
+                }
+            ],
+            "description": "Salient portfolio plugin for Salient theme",
+            "homepage": "https://github.com/13milliseconds/salient-core",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/salient-portfolio/tree/master",
+                "issues": "https://github.com/13milliseconds/salient-portfolio/issues"
+            },
+            "time": "2019-08-21T15:33:04+00:00"
         },
         {
             "name": "composer/installers",
@@ -978,6 +1014,7 @@
     "stability-flags": {
         "13milliseconds/js_composer_salient": 20,
         "13milliseconds/salient-core": 20,
+        "13milliseconds/salient-portfolio": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

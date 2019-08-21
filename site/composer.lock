@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07c4934453522c0de3d95e0e6abdcb03",
+    "content-hash": "9d0bbe3785f648a6483d53b957852cd0",
     "packages": [
+        {
+            "name": "13milliseconds/js_composer_salient",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/js_composer_salient.git",
+                "reference": "a2739c26b24b501a96b2ed5a6a6144ec9f0c0d89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/js_composer_salient/zipball/a2739c26b24b501a96b2ed5a6a6144ec9f0c0d89",
+                "reference": "a2739c26b24b501a96b2ed5a6a6144ec9f0c0d89",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPBakery",
+                    "homepage": "https://wpbakery.com/"
+                }
+            ],
+            "description": "WPBakery Composer for Salient theme",
+            "homepage": "https://github.com/13milliseconds/js_composer_salient",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/js_composer_salient/tree/master",
+                "issues": "https://github.com/13milliseconds/js_composer_salient/issues"
+            },
+            "time": "2019-08-21T15:12:46+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.7.0",
@@ -904,6 +940,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "13milliseconds/js_composer_salient": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

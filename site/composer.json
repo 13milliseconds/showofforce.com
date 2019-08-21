@@ -34,6 +34,10 @@
     {
       "type": "composer",
       "url": "https://composer.deliciousbrains.com/D4A7ACB70D1F4E28E3BF5453A3FC8564"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:13milliseconds/js_composer_salient.git"
     }
   ],
   "require": {
@@ -43,6 +47,7 @@
     "oscarotero/env": "^1.2.0",
     "roots/wordpress": "5.2.2",
     "roots/wp-config": "1.0.0",
+    "13milliseconds/js_composer_salient": "dev-master",
     "roots/wp-password-bcrypt": "1.0.0",
     "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
     "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",

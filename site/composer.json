@@ -49,6 +49,10 @@
     },
     {
       "type": "vcs",
+      "url": "git@github.com:13milliseconds/salient-widgets.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@github.com:13milliseconds/salient-nectar-slider.git"
     }
   ],
@@ -62,6 +66,7 @@
     "13milliseconds/js_composer_salient": "dev-master",
     "13milliseconds/salient-core": "dev-master",
     "13milliseconds/salient-portfolio": "dev-master",
+    "13milliseconds/salient-widgets": "dev-master",
     "13milliseconds/salient-nectar-slider": "dev-master",
     "roots/wp-password-bcrypt": "1.0.0",
     "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",

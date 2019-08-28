@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09c5c31e98ad21aac412479c92c8c65c",
+    "content-hash": "3bf4f1494d339e68d9f1211ceea4baff",
     "packages": [
         {
             "name": "13milliseconds/js_composer_salient",
@@ -143,6 +143,42 @@
                 "issues": "https://github.com/13milliseconds/salient-portfolio/issues"
             },
             "time": "2019-08-21T15:33:04+00:00"
+        },
+        {
+            "name": "13milliseconds/salient-widgets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/salient-widgets.git",
+                "reference": "0cb8de8b9a405f876c6078526f514fc373d6c17c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/salient-widgets/zipball/0cb8de8b9a405f876c6078526f514fc373d6c17c",
+                "reference": "0cb8de8b9a405f876c6078526f514fc373d6c17c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "WPBakery",
+                    "homepage": "https://wpbakery.com/"
+                }
+            ],
+            "description": "Salient widgets plugin for Salient theme",
+            "homepage": "https://github.com/13milliseconds/salient-widgets",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/salient-widgets/tree/master",
+                "issues": "https://github.com/13milliseconds/salient-widgets/issues"
+            },
+            "time": "2019-08-28T04:05:29+00:00"
         },
         {
             "name": "composer/installers",
@@ -1050,6 +1086,7 @@
         "13milliseconds/js_composer_salient": 20,
         "13milliseconds/salient-core": 20,
         "13milliseconds/salient-portfolio": 20,
+        "13milliseconds/salient-widgets": 20,
         "13milliseconds/salient-nectar-slider": 20,
         "roave/security-advisories": 20
     },

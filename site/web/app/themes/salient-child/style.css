@@ -66,72 +66,79 @@ a:active {
 }
 
 /* line 65, style.scss */
+.project-title {
+  background-color: #000000 !important;
+}
+/* line 68, style.scss */
 .project-title .section-title {
   padding: 0 !important;
 }
+/* line 71, style.scss */
+.project-title .section-title h1 {
+  color: #FFFFFF;
+}
 
-/* line 69, style.scss */
+/* line 77, style.scss */
 .container-wrap, .project-title {
-  background-color: #FFFFFF !important;
   margin-top: 0 !important;
   padding-top: 0;
 }
 
-/* line 75, style.scss */
+/* line 82, style.scss */
 .swiper-slide[data-bg-alignment="center"] {
   margin-bottom: 50px;
 }
 
-/* line 79, style.scss */
+/* line 86, style.scss */
 .row .col.section-title {
   padding: 30px 0px !important;
 }
 
-/* line 83, style.scss */
+/* line 90, style.scss */
 #page-header-bg h1 {
   line-height: 40px !important;
 }
 
-/* line 88, style.scss */
+/* line 95, style.scss */
 body h1, body .row .col.section-title h1 {
   line-height: 40px !important;
 }
 
-/* line 93, style.scss */
+/* line 100, style.scss */
 [class^="icon-"], [class*=" icon-"] {
   background-color: #FFFFFF !important;
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 690px) {
-  /* line 99, style.scss */
+  /* line 106, style.scss */
   .portfolio-items:not(.carousel) .col.span_4, .portfolio-items:not(.carousel) .col.span_3 {
     width: 49% !important;
     margin: 1px !important;
   }
 }
-/* line 107, style.scss */
+/* line 114, style.scss */
 .portfolio-items .col.span_4 {
   width: 32.5%;
   margin: 0px 1px;
 }
-/* line 111, style.scss */
+/* line 118, style.scss */
 .portfolio-items .col.span_3 {
   width: 24%;
   margin: 0px 1px;
 }
 
-/* line 117, style.scss */
+/* line 124, style.scss */
 body .portfolio-items .col {
   height: auto;
   margin-bottom: 2px !important;
 }
 
-/* line 122, style.scss */
+/* line 129, style.scss */
 #footer-outer #copyright li a i {
   color: white;
 }
 
-/* line 126, style.scss */
+/* line 133, style.scss */
 .portfolio-items .col .work-item .work-info a {
   background-color: rgba(1, 1, 1, 0);
   font-family: Montserrat;
@@ -140,46 +147,46 @@ body .portfolio-items .col {
   text-align: center;
 }
 
-/* line 134, style.scss */
+/* line 141, style.scss */
 .menu-item img {
   width: 15px !important;
   margin-bottom: 5px !important;
 }
 
-/* line 139, style.scss */
+/* line 146, style.scss */
 .facebooklogo:hover {
   background-image: url("https://web.archive.org/web/20181205033411im_/http://showofforce.com/official/wp-content/uploads/2015/06/facebook-red.png");
 }
 
-/* line 143, style.scss */
+/* line 150, style.scss */
 .twitterlogo:hover {
   background-image: url("https://web.archive.org/web/20181205033411im_/http://showofforce.com/official/wp-content/uploads/2015/06/twitter-red.png");
 }
 
-/* line 147, style.scss */
+/* line 154, style.scss */
 #footer-outer #copyright {
   margin-bottom: 20px;
 }
 
 /*################  PORTFOLIO  #########################*/
-/* line 153, style.scss */
+/* line 160, style.scss */
 .portfolio-filters-inline .container ul {
   float: left;
 }
 
-/* line 157, style.scss */
+/* line 164, style.scss */
 .portfolio-items .col .work-info .vert-center {
   text-align: center !important;
   font-size: 20px;
 }
-/* line 161, style.scss */
+/* line 168, style.scss */
 .portfolio-items .col .work-info .vert-center p {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   text-align: left !important;
 }
-/* line 168, style.scss */
+/* line 175, style.scss */
 .portfolio-items .col .work-info .vert-center h3 {
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -187,139 +194,139 @@ body .portfolio-items .col {
   text-align: left !important;
 }
 
-/* line 176, style.scss */
+/* line 183, style.scss */
 .portfolio-filters-inline .container ul a {
   font-size: 20px;
   padding-left: 0px;
   padding-right: 20px;
 }
-/* line 180, style.scss */
+/* line 187, style.scss */
 .portfolio-filters-inline .container ul a:hover {
   color: white;
 }
 
 /*################  SINGLE PORTFOLIO ITEM  #########################*/
-/* line 188, style.scss */
+/* line 195, style.scss */
 #full_width_portfolio #page-header-bg {
   background-color: black !important;
 }
-/* line 190, style.scss */
+/* line 197, style.scss */
 #full_width_portfolio #page-header-bg h1 {
   color: white !important;
 }
-/* line 194, style.scss */
+/* line 201, style.scss */
 #full_width_portfolio h1 {
   text-align: left;
 }
 
-/* line 199, style.scss */
+/* line 206, style.scss */
 .single-portfolio .row .col.section-title h1 {
   text-align: left !important;
 }
 
-/* line 203, style.scss */
+/* line 210, style.scss */
 #portfolio-nav a i {
   color: #cccccc !important;
 }
 
-/* line 208, style.scss */
+/* line 215, style.scss */
 #full_width_portfolio .container-wrap {
   background-color: black !important;
   color: white !important;
 }
-/* line 212, style.scss */
+/* line 219, style.scss */
 #full_width_portfolio h2 {
   color: white !important;
 }
 
-/* line 217, style.scss */
+/* line 224, style.scss */
 .icon-salient-left-arrow-thin {
   color: white !important;
 }
 
-/* line 221, style.scss */
+/* line 228, style.scss */
 .carousel-next, .carousel-prev {
   background-color: transparent;
 }
 
-/* line 225, style.scss */
+/* line 232, style.scss */
 #top #logo img {
   margin-top: 3px;
 }
 
-/* line 229, style.scss */
+/* line 236, style.scss */
 .single-portfolio #post-area {
   width: 100% !important;
 }
 
 /*################  TEAM  #########################*/
-/* line 235, style.scss */
+/* line 242, style.scss */
 .portfolio-items .col .work-info-bg {
   background-color: black;
 }
 
-/* line 239, style.scss */
+/* line 246, style.scss */
 .team {
   background-color: #ce1126 !important;
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1300px) {
-  /* line 244, style.scss */
+  /* line 251, style.scss */
   .portfolio-items .work-meta p {
     font-size: 9px;
   }
 
-  /* line 247, style.scss */
+  /* line 254, style.scss */
   body {
     background-color: black !important;
   }
 }
-/* line 252, style.scss */
+/* line 259, style.scss */
 .work-meta {
   height: 60px;
 }
-/* line 254, style.scss */
+/* line 261, style.scss */
 .work-meta p {
   line-height: 15px !important;
   padding-top: 5px;
 }
 
 /*################  BACKGROUNDS  #########################*/
-/* line 262, style.scss */
+/* line 269, style.scss */
 #ajax-loading-screen {
   background-color: black;
 }
 
-/* line 266, style.scss */
+/* line 273, style.scss */
 body {
   background-color: black !important;
 }
 
-/* line 270, style.scss */
+/* line 277, style.scss */
 .team-member h4 {
   font-size: 15px;
   text-transform: uppercase !important;
 }
 
-/* line 275, style.scss */
+/* line 282, style.scss */
 .position {
   font-size: 12px;
   text-transform: uppercase !important;
 }
 
-/* line 280, style.scss */
+/* line 287, style.scss */
 .team-member img {
   margin-bottom: 0px !important;
 }
 
 /*################  SOCIAL GOOD PAGE  #########################*/
-/* line 287, style.scss */
+/* line 294, style.scss */
 .white-sg-text p {
   color: white;
   font-size: 16px;
   text-transform: none !important;
 }
-/* line 292, style.scss */
+/* line 299, style.scss */
 .white-sg-text h1 {
   color: white;
   font-size: 50px;
@@ -327,26 +334,26 @@ body {
   text-transform: uppercase;
 }
 
-/* line 300, style.scss */
+/* line 307, style.scss */
 .blue-bg {
   background: #459ad4;
   padding: 20px !important;
   text-align: center;
   color: #0a0a0a;
 }
-/* line 306, style.scss */
+/* line 313, style.scss */
 .blue-bg p {
   width: 70%;
   margin: 0 auto;
 }
-/* line 310, style.scss */
+/* line 317, style.scss */
 .blue-bg h1 {
   font-size: 40px;
   color: white !important;
   padding-bottom: 20px;
 }
 
-/* line 318, style.scss */
+/* line 325, style.scss */
 .button-sg-white {
   padding: 20px;
   background: white;
@@ -354,16 +361,16 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-/* line 324, style.scss */
+/* line 331, style.scss */
 .button-sg-white:hover {
   color: #1d6da4 !important;
 }
-/* line 326, style.scss */
+/* line 333, style.scss */
 .button-sg-white:hover i {
   color: #1d6da4 !important;
 }
 
-/* line 332, style.scss */
+/* line 339, style.scss */
 .icon-tiny-sg {
   line-height: 20px !important;
   height: 20px;
@@ -374,24 +381,24 @@ body {
   background-color: transparent !important;
 }
 
-/* line 342, style.scss */
+/* line 349, style.scss */
 .grey-bg {
   color: #0a0a0a;
 }
-/* line 344, style.scss */
+/* line 351, style.scss */
 .grey-bg h1 {
   font-size: 35px;
   color: #459ad4 !important;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
-/* line 350, style.scss */
+/* line 357, style.scss */
 .grey-bg .large {
   font-size: 20px !important;
   border: 3px solid !important;
 }
 
-/* line 356, style.scss */
+/* line 363, style.scss */
 .button-sg-grey {
   padding: 20px;
   background: #d8d8d8;
@@ -400,27 +407,27 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-/* line 363, style.scss */
+/* line 370, style.scss */
 .button-sg-grey:hover {
   color: #1d6da4 !important;
 }
-/* line 364, style.scss */
+/* line 371, style.scss */
 .button-sg-grey:hover i {
   color: #1d6da4 !important;
 }
 
-/* line 371, style.scss */
+/* line 378, style.scss */
 .sg-portfolio .work-info-bg {
   background-color: #459ad4 !important;
 }
 
-/* line 375, style.scss */
+/* line 382, style.scss */
 .vert-cent {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 380, style.scss */
+/* line 387, style.scss */
 .vert-cent-wrap {
   display: table;
   height: auto;
@@ -428,58 +435,58 @@ body {
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 1000px) {
-  /* line 387, style.scss */
+  /* line 394, style.scss */
   .button-sg-grey {
     padding: 15px !important;
     font-size: 17px !important;
   }
 }
 @media only screen and (max-width: 990px) and (min-width: 470px) {
-  /* line 394, style.scss */
+  /* line 401, style.scss */
   .button-sg-white {
     padding: 15px;
     font-size: 17px;
   }
 
-  /* line 398, style.scss */
+  /* line 405, style.scss */
   .grey-bg {
     text-align: center;
   }
 
-  /* line 401, style.scss */
+  /* line 408, style.scss */
   .button-sg-grey {
     padding: 15px !important;
     font-size: 17px !important;
   }
 }
 @media only screen and (max-width: 470px) {
-  /* line 408, style.scss */
+  /* line 415, style.scss */
   .blue-bg h1 {
     font-size: 30px;
   }
 
-  /* line 411, style.scss */
+  /* line 418, style.scss */
   .button-sg-white {
     padding: 10px;
     font-size: 12px;
     background-color: transparent;
     color: #fff !important;
   }
-  /* line 416, style.scss */
+  /* line 423, style.scss */
   .button-sg-white i {
     color: #fff !important;
   }
-  /* line 419, style.scss */
+  /* line 426, style.scss */
   .button-sg-white:hover {
     color: #fafafa !important;
   }
 
-  /* line 423, style.scss */
+  /* line 430, style.scss */
   .grey-bg {
     text-align: center;
   }
 
-  /* line 426, style.scss */
+  /* line 433, style.scss */
   .button-sg-grey {
     padding: 15px !important;
     font-size: 17px !important;
@@ -487,65 +494,65 @@ body {
     background-color: transparent;
   }
 }
-/* line 434, style.scss */
+/* line 441, style.scss */
 #footer-outer #copyright {
   margin-bottom: 0px !important;
 }
 
 /*################  AMBASSADORS SIGN UP  #########################*/
-/* line 440, style.scss */
+/* line 447, style.scss */
 input {
   padding-bottom: 40px;
 }
 
 /*################  SOF Social Good  #########################*/
-/* line 446, style.scss */
+/* line 453, style.scss */
 #about-more {
   display: none;
 }
-/* line 448, style.scss */
+/* line 455, style.scss */
 #about-more.active {
   display: block;
 }
 
-/* line 453, style.scss */
+/* line 460, style.scss */
 .white-sg-text h3 {
   color: white;
 }
 
-/* line 457, style.scss */
+/* line 464, style.scss */
 .blog-title h1 {
   color: #459ad4;
 }
 
-/* line 461, style.scss */
+/* line 468, style.scss */
 input[type=submit] {
   background-color: #459ad4;
 }
-/* line 463, style.scss */
+/* line 470, style.scss */
 input[type=submit]#mc-embedded-subscribe:hover {
   background-color: #459ad4 !important;
   opacity: .6;
 }
 
-/* line 469, style.scss */
+/* line 476, style.scss */
 body header#top nav .sf-menu ul li.current-menu-item > a {
   color: white !important;
   text-transform: uppercase;
 }
 
-/* line 475, style.scss */
+/* line 482, style.scss */
 .sub-menu a:link, .sub-menu a:hover, .sub-menu a:visited {
   color: white !important;
   text-transform: uppercase;
 }
 
-/* line 481, style.scss */
+/* line 488, style.scss */
 body header#top nav .sf-menu ul li.current-menu-item > a:hover {
   color: #459ad4 !important;
 }
 
-/* line 487, style.scss */
+/* line 494, style.scss */
 #author-bio {
   display: none;
 }

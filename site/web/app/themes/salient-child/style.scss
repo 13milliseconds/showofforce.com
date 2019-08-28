@@ -62,12 +62,19 @@ Version: 1.0
     display: none !important;
   }
   
-  .project-title .section-title {
-    padding: 0 !important;
+  .project-title{
+    background-color: #000000!important;
+
+    .section-title {
+      padding: 0 !important;
+  
+      h1{
+        color: #FFFFFF;
+      }
+    }
   }
   
   .container-wrap, .project-title {
-    background-color: #FFFFFF !important;
     margin-top: 0 !important;
     padding-top: 0;
   }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8f05e0203d62109465172fdfc473f17",
+    "content-hash": "09c5c31e98ad21aac412479c92c8c65c",
     "packages": [
         {
             "name": "13milliseconds/js_composer_salient",
@@ -77,6 +77,36 @@
                 "issues": "https://github.com/13milliseconds/salient-core/issues"
             },
             "time": "2019-08-21T15:26:44+00:00"
+        },
+        {
+            "name": "13milliseconds/salient-nectar-slider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:13milliseconds/salient-nectar-slider.git",
+                "reference": "c56ce0669ffff7367ab570173b97231e5921d208"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/13milliseconds/salient-nectar-slider/zipball/c56ce0669ffff7367ab570173b97231e5921d208",
+                "reference": "c56ce0669ffff7367ab570173b97231e5921d208",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "description": "Salient nectar-slider plugin for Salient theme",
+            "homepage": "https://github.com/13milliseconds/salient-nectar-slider",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/13milliseconds/salient-nectar-slider/tree/master",
+                "issues": "https://github.com/13milliseconds/salient-nectar-slider/issues"
+            },
+            "time": "2019-08-28T03:37:05+00:00"
         },
         {
             "name": "13milliseconds/salient-portfolio",
@@ -610,16 +640,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.4.0",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92"
+                "reference": "95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5084b23845c24dbff8ac6c204290c341e4776c92",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222",
+                "reference": "95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222",
                 "shasum": ""
             },
             "require": {
@@ -633,7 +663,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -647,9 +677,14 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -658,7 +693,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-06-15T22:40:20+00:00"
+            "time": "2019-08-27T17:00:38+00:00"
         },
         {
             "name": "wpackagist-plugin/duplicate-post",
@@ -702,15 +737,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-fastest-cache",
-            "version": "0.8.9.6",
+            "version": "0.8.9.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-fastest-cache/",
-                "reference": "tags/0.8.9.6"
+                "reference": "tags/0.8.9.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-fastest-cache.0.8.9.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1015,6 +1050,7 @@
         "13milliseconds/js_composer_salient": 20,
         "13milliseconds/salient-core": 20,
         "13milliseconds/salient-portfolio": 20,
+        "13milliseconds/salient-nectar-slider": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

@@ -18,6 +18,10 @@ Version: 1.0
         h2, h3, h4, h5 {
             color: #000000;
         }
+
+        .text-white{
+          color: #ffffff;
+        }
   }
   
   p {
@@ -298,11 +302,13 @@ Version: 1.0
     padding: 20px !important;
     text-align: center;
     color: #0a0a0a;
+
     p {
       width: 70%;
       margin: 0 auto;
     }
     h1 {
+
       font-size: 40px;
       color: white !important;
       padding-bottom: 20px;
@@ -437,7 +443,7 @@ Version: 1.0
   
   /*################  SOF Social Good  #########################*/
   
-  .about-more {
+  #about-more {
     display: none;
     &.active {
       display: block;
@@ -474,4 +480,10 @@ Version: 1.0
   
   body header#top nav .sf-menu ul li.current-menu-item > a:hover {
     color: #459ad4 !important;
+  }
+
+  // BLOG
+
+  #author-bio{
+    display: none;
   }

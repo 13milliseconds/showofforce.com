@@ -7,20 +7,26 @@ Author URI:  https://13milliseconds.com
 Template: salient
 Version: 1.0
 */
+
+//Variables
+$black: #000000;
+$white: #ffffff;
+$red: #ce1126;
+$blue: #459ad4;
   
   body {
-    color: #000000;
+    color: $black;
 
         h1 {
-            color: #ce1126;
+            color: $red;
         }
 
         h2, h3, h4, h5 {
-            color: #000000;
+            color: $black;
         }
 
         .text-white{
-          color: #ffffff;
+          color: $white;
         }
   }
   
@@ -88,12 +94,12 @@ Version: 1.0
   }
   
   #page-header-bg h1 {
-    line-height: 40px !important;
+    line-height: 40px;
   }
   
   body {
     h1, .row .col.section-title h1 {
-      line-height: 40px !important;
+      line-height: 40px;
     }
   }
   
@@ -130,12 +136,37 @@ Version: 1.0
     color: white;
   }
   
-  .portfolio-items .col .work-item .work-info a {
-    background-color: rgba(1, 1, 1, 0);
-    font-family: Montserrat;
-    font-size: 15px !important;
-    text-transform: uppercase;
-    text-align: center;
+  .portfolio-items .col .work-item .work-info{
+    padding: 0 10%;
+
+    a {
+      background-color: rgba(1, 1, 1, 0);
+      font-family: Montserrat;
+      font-size: 15px !important;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .vert-center {
+      text-align: center !important;
+      font-size: 20px;
+  
+      p {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left !important;
+      }
+  
+      h3 {
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 26px;
+        text-align: left !important;
+      }
+    }
   }
   
   .menu-item img {
@@ -155,29 +186,30 @@ Version: 1.0
     margin-bottom: 20px;
   }
   
+  #about{
+    h1{
+      color: $black;
+    }
+  }
+
+  .portfolio-filters-inline{
+    .container ul a{
+      font-size: 1em!important;
+    }
+  }
+
+  #contact{
+    h2{
+      color: $white;
+      line-height: 1em;
+    }
+  }
+
+
   /*################  PORTFOLIO  #########################*/
   
   .portfolio-filters-inline .container ul {
     float: left;
-  }
-  
-  .portfolio-items .col .work-info .vert-center {
-    text-align: center !important;
-    font-size: 20px;
-
-    p {
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 18px;
-      text-align: left !important;
-    }
-
-    h3 {
-      padding-bottom: 20px;
-      text-transform: uppercase;
-      font-size: 26px;
-      text-align: left !important;
-    }
   }
   
   .portfolio-filters-inline .container ul a {
@@ -186,6 +218,13 @@ Version: 1.0
     padding-right: 20px;
     &:hover {
       color: white;
+    }
+  }
+
+  .nectar-milestone{ 
+    .number,
+    .symbol-wrap{
+      font-size: 40px!important;
     }
   }
   
@@ -242,9 +281,24 @@ Version: 1.0
   .portfolio-items .col .work-info-bg {
     background-color: black;
   }
+
+  #team{
+    text-align: center;
+
+    h2{
+      a{
+        color: $black;
+      }
+    }
+
+    h4{
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
   
   .team {
-    background-color: #ce1126 !important;
+    background-color: $red !important;
   }
   
   @media only screen and (min-width: 1000px) and (max-width: 1300px) {
@@ -290,16 +344,22 @@ Version: 1.0
   
   /*################  SOCIAL GOOD PAGE  #########################*/
   
+  #social-top{
+    .vc_column-inner{
+      text-align: center;
+    }
+  }
+
   .white-sg-text {
     p {
       color: white;
       font-size: 16px;
       text-transform: none !important;
     }
+
     h1 {
       color: white;
-      font-size: 50px;
-      line-height: 45px !important;
+      line-height: 45px;
       text-transform: uppercase;
     }
   }
@@ -410,8 +470,14 @@ Version: 1.0
       font-size: 17px !important;
     }
   }
-  
-  @media only screen and (max-width: 470px) {
+
+  @media only screen and (max-width: 690px){
+    body h1,
+    body .white-sg-text h1{
+      font-size: 30px;
+      line-height: 1.2em;
+    }
+
     .blue-bg h1 {
       font-size: 30px;
     }
@@ -490,6 +556,17 @@ Version: 1.0
   }
 
   // BLOG
+
+  #blog{
+    h3.title a,
+    h1{
+      color: $blue;
+    }
+
+    .meta-category{
+      display: none;
+    }
+  }
 
   #author-bio{
     display: none;

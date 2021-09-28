@@ -367,7 +367,7 @@
                 if (!wp_script_is ( 'redux-field-background-js' )) {
                     wp_enqueue_script(
                         'redux-field-background-js',
-                        ReduxFramework::$_url . 'inc/fields/background/field_background' . Redux_Functions::isMin() . '.js',
+                        get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/background/field_background' . Redux_Functions::isMin() . '.js',
                         array( 'jquery', 'wp-color-picker', 'select2-js', 'redux-js' ),
                         time(),
                         true
@@ -378,7 +378,7 @@
                     if (!wp_style_is ( 'redux-field-background-css' )) {
                         wp_enqueue_style(
                             'redux-field-background-css',
-                            ReduxFramework::$_url . 'inc/fields/background/field_background.css',
+                            get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/background/field_background.css',
                             array(),
                             time(),
                             'all'

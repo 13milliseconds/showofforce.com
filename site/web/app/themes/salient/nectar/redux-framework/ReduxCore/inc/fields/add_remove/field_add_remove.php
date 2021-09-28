@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             function enqueue() {
                 wp_enqueue_script(
                     'redux-opts-field-add_remove-js', 
-                   ReduxFramework::$_url . 'inc/fields/add_remove/field_add_remove.js', 
+                   get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/add_remove/field_add_remove.js', 
                     array('jquery', 'jquery-ui-core', 'jquery-ui-dialog'),
                     time(),
                     true

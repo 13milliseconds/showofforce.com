@@ -4,7 +4,7 @@
 *
 * Used when "Classic" standard style is selected.
 *
-* @version 10.5
+* @version 11.0
 */
 
 // Exit if accessed directly
@@ -31,10 +31,7 @@ $use_excerpt = ( ! empty( $nectar_options['blog_auto_excerpt'] ) && $nectar_opti
         
         <?php
         // Featured image.
-        $image_attrs = array(
-          'title' => ''
-        );
-        echo '<a href="' . esc_url( get_permalink() ) . '"><span class="post-featured-img">' . get_the_post_thumbnail( $post->ID, 'full', $image_attrs ) . '</span></a>';
+        get_template_part( 'includes/partials/blog/styles/standard-classic/post-image' );
         ?>
         
         <div class="article-content-wrap">

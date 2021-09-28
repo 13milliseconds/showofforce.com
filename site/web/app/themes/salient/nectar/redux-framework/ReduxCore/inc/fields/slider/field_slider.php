@@ -222,7 +222,7 @@ if ( ! class_exists( 'ReduxFramework_slider' ) ) {
 
             wp_enqueue_style(
                 'redux-nouislider-css',
-                ReduxFramework::$_url . 'inc/fields/slider/vendor/nouislider/redux.jquery.nouislider.css',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/slider/vendor/nouislider/redux.jquery.nouislider.css',
                 array(),
                 '5.0.0',
                 'all'
@@ -230,7 +230,7 @@ if ( ! class_exists( 'ReduxFramework_slider' ) ) {
 
             wp_register_script(
                 'redux-nouislider-js',
-                ReduxFramework::$_url . 'inc/fields/slider/vendor/nouislider/redux.jquery.nouislider' . $min . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/slider/vendor/nouislider/redux.jquery.nouislider' . $min . '.js',
                 array( 'jquery' ),
                 '5.0.0',
                 true
@@ -238,7 +238,7 @@ if ( ! class_exists( 'ReduxFramework_slider' ) ) {
 
             wp_enqueue_script(
                 'redux-field-slider-js',
-                ReduxFramework::$_url . 'inc/fields/slider/field_slider' . $min . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/slider/field_slider' . $min . '.js',
                 array( 'jquery', 'redux-nouislider-js', 'redux-js', 'select2-js' ),
                 time(),
                 true
@@ -247,7 +247,7 @@ if ( ! class_exists( 'ReduxFramework_slider' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style(
                     'redux-field-slider-css',
-                    ReduxFramework::$_url . 'inc/fields/slider/field_slider.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/slider/field_slider.css',
                     array(),
                     time(),
                     'all'

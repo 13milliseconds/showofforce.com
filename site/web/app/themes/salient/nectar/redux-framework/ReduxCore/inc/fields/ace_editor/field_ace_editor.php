@@ -110,7 +110,7 @@
                     if ( ! wp_style_is( 'redux-field-ace-editor-css' ) ) {
                         wp_enqueue_style(
                             'redux-field-ace-editor-css',
-                            ReduxFramework::$_url . 'inc/fields/ace_editor/field_ace_editor.css',
+                            get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/ace_editor/field_ace_editor.css',
                             array(),
                             time(),
                             'all'
@@ -135,7 +135,7 @@
                 if ( ! wp_script_is( 'redux-field-ace-editor-js' ) ) {
                     wp_enqueue_script(
                         'redux-field-ace-editor-js',
-                        ReduxFramework::$_url . 'inc/fields/ace_editor/field_ace_editor' . Redux_Functions::isMin() . '.js',
+                        get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/ace_editor/field_ace_editor' . Redux_Functions::isMin() . '.js',
                         array( 'jquery', 'ace-editor-js', 'redux-js' ),
                         time(),
                         true

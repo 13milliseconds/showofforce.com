@@ -243,7 +243,7 @@ if ( ! class_exists( 'ReduxFramework_media' ) ) {
             
             wp_enqueue_script(
                 'redux-field-media-js',
-                ReduxFramework::$_url . 'assets/js/media/media' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/assets/js/media/media' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'redux-js' ),
                 time(),
                 true

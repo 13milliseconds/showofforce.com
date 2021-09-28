@@ -76,7 +76,7 @@ if ( ! class_exists( 'ReduxFramework_switch' ) ) {
         function enqueue() {
             wp_enqueue_script(
                 'redux-field-switch-js',
-                ReduxFramework::$_url . 'inc/fields/switch/field_switch' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/switch/field_switch' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'redux-js' ),
                 time(),
                 true
@@ -85,7 +85,7 @@ if ( ! class_exists( 'ReduxFramework_switch' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style(
                     'redux-field-switch-css',
-                    ReduxFramework::$_url . 'inc/fields/switch/field_switch.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/switch/field_switch.css',
                     array(),
                     time(),
                     'all'

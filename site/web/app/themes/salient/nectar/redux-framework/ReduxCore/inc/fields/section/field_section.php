@@ -120,7 +120,7 @@
                 if ( $this->parent->args['dev_mode'] ) {
                     wp_enqueue_style(
                         'redux-field-section-css',
-                        ReduxFramework::$_url . 'inc/fields/section/field_section.css',
+                        get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/section/field_section.css',
                         array(),
                         time(),
                         'all'

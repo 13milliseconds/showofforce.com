@@ -614,7 +614,7 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
             if (!wp_script_is ( 'redux-field-typography-js' )) {
                 wp_enqueue_script(
                     'redux-field-typography-js',
-                    ReduxFramework::$_url . 'inc/fields/typography/field_typography' . Redux_Functions::isMin() . '.js',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/typography/field_typography' . Redux_Functions::isMin() . '.js',
                     array( 'jquery', 'wp-color-picker', 'select2-js', 'redux-js' ),
                     time(),
                     true
@@ -635,7 +635,7 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
                 if (!wp_style_is('redux-field-typography-css')) {
                     wp_enqueue_style(
                         'redux-field-typography-css',
-                        ReduxFramework::$_url . 'inc/fields/typography/field_typography.css',
+                        get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/typography/field_typography.css',
                         array(),
                         time(),
                         'all'
@@ -680,9 +680,11 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
 
             /* nectar addition */
             if ( ! empty( $subsets ) ) {
-
-                function nectar_subsetFilter($string) {
-                    return strpos($string, 'subset') === false;
+                
+                if( !function_exists('nectar_subsetFilter') ) {
+                  function nectar_subsetFilter($string) {
+                      return strpos($string, 'subset') === false;
+                  }
                 }
 
                 $filteredSubsets = array_filter($subsets, 'nectar_subsetFilter');
@@ -690,9 +692,17 @@ if ( ! class_exists( 'ReduxFramework_typography' ) ) {
                 if(!empty($filteredSubsets))
                    $link .= "&subset=" . implode( ',', $filteredSubsets );
             }
+          
+            $nectar_options = get_nectar_theme_options();
+            $display_swap_str = '';
+            
+            if( isset($nectar_options['typography_font_swap']) && !empty($nectar_options['typography_font_swap']) && '1' === $nectar_options['typography_font_swap'] ) {
+              $display_swap_str = '&display=swap';
+            }
+    
+            return '//fonts.googleapis.com/css?family=' . str_replace( '|', '%7C', $link ) . $display_swap_str;
+            
             /* nectar addition end */
-
-            return '//fonts.googleapis.com/css?family=' . str_replace( '|', '%7C', $link );
         }
 
         /**

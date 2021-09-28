@@ -214,7 +214,7 @@ if ( ! class_exists( 'ReduxFramework_image_select' ) ) {
 
             wp_enqueue_script(
                 'redux-field-image-select-js',
-                ReduxFramework::$_url . 'inc/fields/image_select/field_image_select' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/image_select/field_image_select' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'redux-js' ),
                 time(),
                 true
@@ -223,7 +223,7 @@ if ( ! class_exists( 'ReduxFramework_image_select' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style(
                     'redux-field-image-select-css',
-                    ReduxFramework::$_url . 'inc/fields/image_select/field_image_select.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/image_select/field_image_select.css',
                     array(),
                     time(),
                     'all'

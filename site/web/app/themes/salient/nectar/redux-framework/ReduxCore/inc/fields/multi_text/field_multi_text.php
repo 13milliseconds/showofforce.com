@@ -107,7 +107,7 @@ if ( ! class_exists( 'ReduxFramework_multi_text' ) ) {
 
             wp_enqueue_script(
                 'redux-field-multi-text-js',
-                ReduxFramework::$_url . 'inc/fields/multi_text/field_multi_text' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/multi_text/field_multi_text' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'redux-js' ),
                 time(),
                 true
@@ -116,7 +116,7 @@ if ( ! class_exists( 'ReduxFramework_multi_text' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style(
                     'redux-field-multi-text-css',
-                    ReduxFramework::$_url . 'inc/fields/multi_text/field_multi_text.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/multi_text/field_multi_text.css',
                     array(),
                     time(),
                     'all'

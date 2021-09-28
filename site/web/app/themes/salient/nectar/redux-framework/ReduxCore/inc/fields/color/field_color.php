@@ -104,7 +104,7 @@ if ( ! class_exists( 'ReduxFramework_color' ) ) {
             
             wp_enqueue_script(
                 'redux-field-color-js',
-                ReduxFramework::$_url . 'inc/fields/color/field_color' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/color/field_color' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'wp-color-picker', 'redux-js' ),
                 time(),
                 true

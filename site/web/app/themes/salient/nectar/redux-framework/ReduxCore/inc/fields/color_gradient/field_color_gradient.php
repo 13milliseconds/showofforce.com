@@ -106,7 +106,7 @@ if ( ! class_exists( 'ReduxFramework_color_gradient' ) ) {
             
             wp_enqueue_script(
                 'redux-field-color-gradient-js',
-                ReduxFramework::$_url . 'inc/fields/color_gradient/field_color_gradient' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/color_gradient/field_color_gradient' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'wp-color-picker', 'redux-js' ),
                 time(),
                 'all'
@@ -117,7 +117,7 @@ if ( ! class_exists( 'ReduxFramework_color_gradient' ) ) {
                 
                 wp_enqueue_style(
                     'redux-field-color_gradient-css',
-                    ReduxFramework::$_url . 'inc/fields/color_gradient/field_color_gradient.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/color_gradient/field_color_gradient.css',
                     array(),
                     time(),
                     'all'

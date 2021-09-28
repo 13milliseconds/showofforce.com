@@ -74,7 +74,7 @@ if ( !class_exists ( 'ReduxFramework_divide' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style(
                     'redux-field-divide',
-                    ReduxFramework::$_url . 'inc/fields/divide/field_divide.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/divide/field_divide.css',
                     array(),
                     time(),
                     'all'

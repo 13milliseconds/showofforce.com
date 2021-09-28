@@ -192,7 +192,7 @@
                 if ( ! wp_script_is( 'redux-field-color-rgba-js' ) ) {
                     wp_enqueue_script(
                         'redux-field-color-rgba-js',
-                        ReduxFramework::$_url . 'inc/fields/color_rgba/field_color_rgba' . Redux_Functions::isMin() . '.js',
+                        get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/color_rgba/field_color_rgba' . Redux_Functions::isMin() . '.js',
                         array( 'jquery', 'redux-spectrum-js' ),
                         time(),
                         true
@@ -208,7 +208,7 @@
                     if ( ! wp_style_is( 'redux-field-color-rgba-css' ) ) {
                         wp_enqueue_style(
                             'redux-field-color-rgba-css',
-                            ReduxFramework::$_url . 'inc/fields/color_rgba/field_color_rgba.css',
+                            get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/color_rgba/field_color_rgba.css',
                             array(),
                             time(),
                             'all'

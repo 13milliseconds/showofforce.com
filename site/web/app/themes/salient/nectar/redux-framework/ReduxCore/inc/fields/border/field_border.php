@@ -149,7 +149,7 @@ if ( ! class_exists( 'ReduxFramework_border' ) ) {
                  * Bottom
                  * */
                 if ( $this->field['bottom'] === true ) {
-                    echo '<div class="field-border-input input-prepend"><span class="add-on"><i class="el el-arrow-down icon-large"></i></span><input type="text" class="redux-border-bottom redux-border-input mini ' . esc_attr($this->field['class']_ . '" placeholder="' . __( 'Bottom', 'redux-framework' ) . '" rel="' . esc_attr($this->field['id']) . '-bottom" value="' . esc_attr($this->value['bottom']) . '"></div>';
+                    echo '<div class="field-border-input input-prepend"><span class="add-on"><i class="el el-arrow-down icon-large"></i></span><input type="text" class="redux-border-bottom redux-border-input mini ' . esc_attr($this->field['class']) . '" placeholder="' . __( 'Bottom', 'redux-framework' ) . '" rel="' . esc_attr($this->field['id']) . '-bottom" value="' . esc_attr($this->value['bottom']) . '"></div>';
                 }
 
                 /**
@@ -219,7 +219,7 @@ if ( ! class_exists( 'ReduxFramework_border' ) ) {
             if (!wp_script_is ( 'redux-field-border-js' )) {
                 wp_enqueue_script(
                     'redux-field-border-js',
-                    ReduxFramework::$_url . 'inc/fields/border/field_border' . $min . '.js',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/border/field_border' . $min . '.js',
                     array( 'jquery', 'select2-js', 'wp-color-picker', 'redux-js' ),
                     time(),
                     true
@@ -234,7 +234,7 @@ if ( ! class_exists( 'ReduxFramework_border' ) ) {
                 if (!wp_style_is ( 'redux-field-border-css' )) {
                     wp_enqueue_style(
                         'redux-field-border-css',
-                        ReduxFramework::$_url . 'inc/fields/border/field_border.css',
+                        get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/border/field_border.css',
                         array(),
                         time(),
                         'all'

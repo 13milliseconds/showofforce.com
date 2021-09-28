@@ -26,6 +26,8 @@ $single_post_header_inherit_fi = ( ! empty( $nectar_options['blog_post_header_in
       
         <?php
         
+        $gallery_attr = null;
+                
         if( '1' !== $hide_featrued_image ) {
           
           // Featured Image.
@@ -55,9 +57,49 @@ $single_post_header_inherit_fi = ( ! empty( $nectar_options['blog_post_header_in
         else if( 'link' === $nectar_post_format ) {
           get_template_part( 'includes/partials/blog/media/link' );
         }
+        
+        // Gallery.
+        else if( 'gallery' === $nectar_post_format && '1' !== $hide_featrued_image ) {
           
-
-        echo '<div class="content-inner">';
+          $enable_gallery_slider = get_post_meta( get_the_ID(), '_nectar_gallery_slider', true );
+          if ( ! empty( $enable_gallery_slider ) && 'on' === $enable_gallery_slider ) {
+            
+            $gallery_script = 'flickity';
+            $blog_type      = ( isset($nectar_options['blog_type']) ) ? $nectar_options['blog_type'] : '';
+            
+            // Blog Type/Style will determine what gallery script is used.
+            if( strpos($blog_type, 'masonry') !== false ) {
+              
+              // Masonry style.
+              $blog_masonry_style = ( ! empty( $nectar_options['blog_masonry_type'] ) ) ? $nectar_options['blog_masonry_type'] : 'classic';
+              
+              if( 'classic' === $blog_masonry_style ) {
+                $gallery_script = 'flexslider'; 
+              } 
+              
+            } else {
+              // Standard style.
+              $blog_standard_style = ( ! empty( $nectar_options['blog_standard_type'] ) ) ? $nectar_options['blog_standard_type'] : 'classic';
+              
+              if( 'classic' === $blog_standard_style ) {
+                $gallery_script = 'flexslider'; 
+              } 
+            }
+            
+            if( 'flickity' === $gallery_script ) {
+              echo '<div class="top-featured-media full-width-content wpb_row vc_row-fluid standard_section">';
+              get_template_part( 'includes/partials/blog/media/gallery-flickity' );
+              echo '</div>';
+            } else {
+              get_template_part( 'includes/partials/blog/media/gallery-flexslider' );
+            }
+            
+            $gallery_attr = ' data-has-gallery';
+          }
+        }
+          
+        
+        echo '<div class="content-inner"'. esc_html($gallery_attr).'>';
           
           // Post content.
           if( 'link' !== $nectar_post_format ) {

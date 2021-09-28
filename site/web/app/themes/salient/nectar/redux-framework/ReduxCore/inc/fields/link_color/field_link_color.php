@@ -121,7 +121,7 @@ if ( ! class_exists( 'ReduxFramework_link_color' ) ) {
             
             wp_enqueue_script(
                 'redux-field-link-color-js',
-                ReduxFramework::$_url . 'inc/fields/link_color/field_link_color' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/link_color/field_link_color' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'wp-color-picker', 'redux-js' ),
                 time(),
                 true
@@ -132,7 +132,7 @@ if ( ! class_exists( 'ReduxFramework_link_color' ) ) {
 
                 wp_enqueue_style(
                     'redux-field-link_color-js',
-                    ReduxFramework::$_url . 'inc/fields/link_color/field_link_color.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/link_color/field_link_color.css',
                     array(),
                     time(),
                     'all'

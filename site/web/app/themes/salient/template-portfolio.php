@@ -122,7 +122,11 @@ nectar_page_header($post->ID); ?>
 			$category_count = 0;
 			
 			if(!empty($categories)) {
-		
+				
+				if( is_string($categories) ) {
+					$categories = explode(', ', $categories);
+				} 
+				
 				foreach($categories as $key => $slug){
 					if($category_count == 0){
 						$project_categories .= $slug;

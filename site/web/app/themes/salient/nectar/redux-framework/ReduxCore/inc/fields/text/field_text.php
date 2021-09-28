@@ -82,7 +82,7 @@ if ( ! class_exists( 'ReduxFramework_text' ) ) {
             if ($this->parent->args['dev_mode']) {
                 wp_enqueue_style(
                     'redux-field-text-css',
-                    ReduxFramework::$_url . 'inc/fields/text/field_text.css',
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/text/field_text.css',
                     array(),
                     time(),
                     'all'

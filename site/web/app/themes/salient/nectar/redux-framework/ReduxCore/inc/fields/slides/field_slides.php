@@ -243,7 +243,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
                 
                 wp_enqueue_style (
                     'redux-field-slides-css', 
-                    ReduxFramework::$_url . 'inc/fields/slides/field_slides.css', 
+                    get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/slides/field_slides.css', 
                     array(),
                     time (), 
                     'all'
@@ -252,7 +252,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
             
             wp_enqueue_script(
                 'redux-field-media-js',
-                ReduxFramework::$_url . 'assets/js/media/media' . Redux_Functions::isMin() . '.js',
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/assets/js/media/media' . Redux_Functions::isMin() . '.js',
                 array( 'jquery', 'redux-js' ),
                 time(),
                 true
@@ -260,7 +260,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
 
             wp_enqueue_script (
                 'redux-field-slides-js', 
-                ReduxFramework::$_url . 'inc/fields/slides/field_slides' . Redux_Functions::isMin () . '.js', 
+                get_template_directory_uri() . '/nectar/redux-framework/ReduxCore/inc/fields/slides/field_slides' . Redux_Functions::isMin () . '.js', 
                 array( 'jquery', 'jquery-ui-core', 'jquery-ui-accordion', 'jquery-ui-sortable', 'redux-field-media-js' ),
                 time (), 
                 true
